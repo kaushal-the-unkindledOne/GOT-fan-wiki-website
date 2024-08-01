@@ -1,0 +1,218 @@
+/* General styles */
+@font-face {
+  font-family: 'Kingvoon';
+  src: url('../Fonts/kingvoon-kingvoon-regular-400.otf') format('opentype');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Kingvoon', sans-serif; /* Set the default font to Kingvoon */
+  background: url('../images/frame.jpg') no-repeat center center fixed;
+  background-size: cover; /* Use frame.jpg as the background for the whole page */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background and container styles */
+.home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-overlay {
+  padding: 20px; /* Adjust padding */
+  border-radius: 10px;
+  max-width: 70%; /* Adjust width */
+  margin-top: 20px; /* Move closer to navbar */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.side-image {
+  max-width: 300px;
+  margin-right: 20px;
+  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Adjusted text-box styles */
+.text-box {
+  color: #fff;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Add background color for better readability */
+  border-radius: 10px;
+}
+
+.text-box h1,
+.text-box p {
+  font-family: 'Kingvoon', sans-serif; /* Ensure Kingvoon font is applied */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.text-box h1 {
+  font-size: 36px;
+  margin-top: 0; /* Remove any default margin at the top */
+}
+
+.text-box p {
+  font-size: 18px;
+  margin-top: 10px; /* Adjust spacing between heading and paragraph */
+}
+
+/* Adjusting the navbar */
+.navbar-custom {
+  height: 200px; /* Adjust height if necessary */
+  background: url('../images/logo.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Kingvoon', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  line-height: 1.2; /* Adjust line height for better spacing */
+  white-space: nowrap; /* Ensure no unintended line breaks */
+}
+
+/* Updated styles for nav links */
+.navbar-nav .nav-link {
+  color: #fff; /* Set the color to white */
+  font-size: 20px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+  margin-right: 40px; /* Add space between links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0f0f0; /* Slightly lighter color on hover */
+}
+
+/* Section container styling */
+.section-container {
+  padding: 40px 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); /* Add background color */
+  margin: 20px auto; /* Center sections */
+  max-width: 80%; /* Adjust width */
+  border-radius: 10px;
+  text-align: center; 
+  font-family: 'Kingvoon', sans-serif; /* Center the text */
+}
+
+.section-container h2 {
+  font-family: 'Kingvoon', sans-serif; /* Ensure Kingvoon font is applied */
+  font-size: 32px; /* Adjust font size */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+}
+
+/* George section styling */
+.george-section {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.george-image {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.george-desc {
+  max-width: 500px;
+  color: #fff;
+  font-family: 'Kingvoon', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add space between cards */
+  justify-content: center; /* Center the cards */
+}
+
+/* Card styling */
+.card {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Kingvoon', sans-serif; /* Apply Kingvoon font */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.card-body {
+  padding: 15px;
+  color: #fff;
+  text-align: center; /* Center-align the text */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add space below the title */
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+/* Style for card links */
+.card-link {
+  text-decoration: none;
+}
+
+/* Specific styles for character details */
+.character-details {
+  font-family: 'Kingvoon', sans-serif; /* Apply Kingvoon font */
+  color: #fff;
+}
+
+.character-details .details-card {
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for the details card */
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.character-details .details-card .card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.character-details .details-card .card-text {
+  font-size: 18px;
+}
